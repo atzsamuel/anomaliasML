@@ -1,6 +1,6 @@
 # Login anomaly detection
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+_Automatically synced with your [v0.app](https://v0.app) deployments_
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/samuelatz4661-4422s-projects/v0-login-anomaly-detection)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/JfprQlPXAZN)
@@ -22,7 +22,7 @@ El objetivo principal del proyecto es proporcionar una plataforma para experimen
 ## Estructura del repositorio (resumen)
 
 - `app/` - Rutas de Next.js (API y páginas).
-	- `app/api/` - Endpoints del backend (detección, métricas, ML, simulador, control, etc.).
+  - `app/api/` - Endpoints del backend (detección, métricas, ML, simulador, control, etc.).
 - `components/` - Componentes React/TSX para el dashboard.
 - `lib/` - Lógica del servidor: collector, detector, simulador y utilidades.
 - `scripts/` - Scripts auxiliares (ej. `isolation_forest_model.py` para el modelo ML).
@@ -58,6 +58,22 @@ python -m venv .venv
 pip install -r requirements.txt  # si creas este archivo; de lo contrario instalar scikit-learn pandas numpy
 python scripts/isolation_forest_model.py --help
 ```
+
+## How It Works
+
+1. Build your application logic visually using **v0.app**.
+2. Deploy your chat-based app from the **v0 Deployment Panel**.
+3. v0 will automatically **sync all changes** to this Git repository.
+4. Vercel picks up the latest commit and **updates the live deployment**.
+
+## Tech Stack
+
+| Component       | Technology                                           |
+| --------------- | ---------------------------------------------------- |
+| UI / Chat Logic | **v0.app**                                           |
+| Deployment      | **Vercel**                                           |
+| Version Control | **Git + GitHub**                                     |
+| AI Model        | Provided through **v0 integrated model environment** |
 
 ## Endpoints principales (resumen)
 
